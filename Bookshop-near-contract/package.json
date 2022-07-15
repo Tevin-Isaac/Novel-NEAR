@@ -1,0 +1,12 @@
+{
+  "name": "Bookshop-near-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "near-cli": "^3.4.0"
+  },
+  "devDependencies": {
+    "near-sdk-as": "^3.2.3"
+  }
+}
