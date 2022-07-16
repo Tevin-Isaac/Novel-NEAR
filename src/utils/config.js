@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || "contract.tevin.testnet";
+const CONTRACT_NAME = process.env.CONTRACT_NAME || "contract.tevinprime.testnet";
 
 function environment(env) {
     switch (env) {
