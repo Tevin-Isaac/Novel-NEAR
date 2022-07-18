@@ -2,6 +2,8 @@
 Novel Centre is a platform built under NEAR blockchain where users can create New Novels and can also appreciate Featured Novels of their choice that they like.
 
 This is inspired by Dacade Near Course for learning purposes.
+ ## DEMO
+ http://novel-near.vercel.app/
 
 
 # Getting Started with Create React App
