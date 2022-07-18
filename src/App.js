@@ -96,7 +96,7 @@ The authors concluded, “Since time constraints are one of the most frequently 
             <span class="fa fa-star checked"></span>
           </div>
           <p class="testimonial-text">
-            I love Novels.Novels exist forever
+            I love Novels.Novels will exist forever.
           </p>
          
         </div>
@@ -118,7 +118,7 @@ The authors concluded, “Since time constraints are one of the most frequently 
             <span class="fa fa-star checked"></span>
           </div>
           <p class="testimonial-text">
-           For sometime i wanted to always appreciate all time great novels.This is the place
+           For sometime i wanted to always appreciate all time great novels.This is the place of appreciation.
           </p>
          
         </div>
@@ -137,7 +137,7 @@ The authors concluded, “Since time constraints are one of the most frequently 
             <span class="fa fa-star checked"></span>
           </div>
           <p class="testimonial-text">
-            Reading is something that will always help you and build your ay of thinking
+            Reading is something that will always help you and build your way of thinking and viewing life.
           </p>
          
         </div>
