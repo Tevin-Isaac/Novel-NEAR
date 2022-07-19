@@ -92,7 +92,7 @@ near create-account appreciator.tevinprime.testnet --masterAccount tevinprime.te
 ### Perform appreciation call and view the result
 
 ```
-near call contract.tevinprime.testnet appreciateOneNear "{\"id\": \"1\"}" --depositYocto=1000000000000000000000000 --accountId=appreciator.tevinprime.testnet
+near call contract.tevinprime.testnet AppreciateOneNear "{\"id\": \"1\"}" --depositYocto=1000000000000000000000000 --accountId=appreciator.tevinprime.testnet
 near view contract.tevinprime.testnet getBook "{\"id\": \"0\"}"
 ```
 Test account phrase(tevinprime.testnet):inherit wisdom trend stumble vital crazy puppy sunny rough canoe pulse bullet
