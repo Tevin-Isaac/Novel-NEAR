@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import {Badge, Button, Card, Col, Stack} from "react-bootstrap";
 
-const Book = ({book, appreciate, deleteBook}) => {
-    const {id, name, description, image, genre, owner, appreciation} =
+const Book = ({book, Appreciate, deleteBook}) => {
+    const {id, name, description, image, genre, owner, Appreciation} =
         book;
 
     const triggerAppreciate = () => {
-        appreciate(id);
+        Appreciate(id);
     };
 
     const triggerDelete = () => {
@@ -23,7 +23,7 @@ const Book = ({book, appreciate, deleteBook}) => {
                     <Stack direction="horizontal" gap={2}>
                         <span className="font-monospace text-secondary">{owner}</span>
                         <Badge bg="secondary" className="ms-auto">
-                            {appreciation} Appreciated
+                            {Appreciation} Appreciated
                         </Badge>
                     </Stack>
                 </Card.Header>
@@ -59,7 +59,7 @@ const Book = ({book, appreciate, deleteBook}) => {
 
 Book.propTypes = {
     book: PropTypes.instanceOf(Object).isRequired,
-    appreciate: PropTypes.func.isRequired,
+    Appreciate: PropTypes.func.isRequired,
     deleteBook: PropTypes.func.isRequired,
 };
 

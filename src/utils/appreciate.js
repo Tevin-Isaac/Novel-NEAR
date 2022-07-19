@@ -12,8 +12,8 @@ export function getBooks() {
     return window.contract.getBooks();
 }
 
-export async function appreciateOneNear(id) {
-    await window.contract.appreciateOneNear({id: id}, GAS, parseNearAmount("1"));
+export async function AppreciateOneNear(id) {
+    await window.contract.AppreciateOneNear({id: id}, GAS, parseNearAmount("1"));
 }
 
 export async function deleteBook(id, owner) {

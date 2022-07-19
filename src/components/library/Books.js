@@ -5,7 +5,7 @@ import Book from "./Book";
 import Loader from "../utils/Loader";
 import {Row} from "react-bootstrap";
 import {NotificationError, NotificationSuccess} from "../utils/Notifications";
-import {createBook, deleteBook, appreciateOneNear, getBooks as getBookList} from "../../utils/appreciate";
+import {createBook, deleteBook, AppreciateOneNear, getBooks as getBookList} from "../../utils/appreciate";
 
 const Books = () => {
     const [books, setBooks] = useState([]);
@@ -37,12 +37,12 @@ const Books = () => {
         }
     };
 
-    const appreciate = async (id) => {
+    const Appreciate = async (id) => {
         try {
-            await appreciateOneNear(id).then(() => getBooks());
+            await AppreciateOneNear(id).then(() => getBooks());
             toast(<NotificationSuccess text="Appreciated successfully🎉"/>);
         } catch (error) {
-            toast(<NotificationError text="Failed to appreciate"/>);
+            toast(<NotificationError text="Failed to Appreciate"/>);
         } finally {
             setLoading(false);
         }
@@ -78,7 +78,7 @@ const Books = () => {
                                 book={{
                                     ..._book,
                                 }}
-                                appreciate={appreciate}
+                                Appreciate={Appreciate}
                                 deleteBook={deleteOwnerBook}
                             />
                         ))}

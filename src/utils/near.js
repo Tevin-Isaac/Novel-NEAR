@@ -18,7 +18,7 @@ export async function initializeContract() {
         nearEnv.contractName,
         {
             viewMethods: ["getBook", "getBooks"],
-            changeMethods: ["appreciateOneNear", "setBook", "deleteBook", "resetBooks"],
+            changeMethods: ["AppreciateOneNear", "setBook", "deleteBook", "resetBooks"],
         }
     );
 }
