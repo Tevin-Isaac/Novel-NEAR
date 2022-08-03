@@ -40,7 +40,7 @@ const Book = ({book,vote, Appreciate, deleteBook}) => {
               </span>
             </button>
                         <Badge bg="secondary" className="ms-auto">
-                            {Appreciation} kudos
+                            {Appreciation} 
                         </Badge>
                     </Stack>
                 </Card.Header>

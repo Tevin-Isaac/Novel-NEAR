@@ -56,7 +56,7 @@ const Books = () => {
       }).then((resp) => getBooks());
       toast(<NotificationSuccess text= {(voteType == 0)? "I liked this book" : "I disliked this book"} />);
     } catch (error) {
-      toast(<NotificationError text={`Sorry,  you have voted before?`} />);
+      toast(<NotificationError text={`Sorry,You have already voted before!`} />);
     } finally {
       setLoading(false);
     }
