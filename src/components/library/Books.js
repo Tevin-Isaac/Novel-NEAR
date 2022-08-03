@@ -5,7 +5,7 @@ import Book from "./Book";
 import Loader from "../utils/Loader";
 import {Row} from "react-bootstrap";
 import {NotificationError, NotificationSuccess} from "../utils/Notifications";
-import {createBook, deleteBook, AppreciateOneNear, getBooks as getBookList} from "../../utils/appreciate";
+import {createBook,voteBook, deleteBook, AppreciateOneNear, getBooks as getBookList} from "../../utils/appreciate";
 
 const Books = () => {
     const [books, setBooks] = useState([]);
@@ -47,6 +47,20 @@ const Books = () => {
             setLoading(false);
         }
     };
+     // function to vote for a book
+  const voteBookItem = async (id, voteType) => {
+    try{
+      await voteBook({
+        id, 
+        voteType,
+      }).then((resp) => getBooks());
+      toast(<NotificationSuccess text= {(voteType == 0)? "I liked this book" : "I disliked this book"} />);
+    } catch (error) {
+      toast(<NotificationError text={`Sorry,  you have voted before?`} />);
+    } finally {
+      setLoading(false);
+    }
+  };
 
     const deleteOwnerBook = async (id, owner) => {
         try {
@@ -79,6 +93,7 @@ const Books = () => {
                                     ..._book,
                                 }}
                                 Appreciate={Appreciate}
+                                vote={voteBookItem}
                                 deleteBook={deleteOwnerBook}
                             />
                         ))}

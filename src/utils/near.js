@@ -17,8 +17,8 @@ export async function initializeContract() {
         window.walletConnection.account(),
         nearEnv.contractName,
         {
-            viewMethods: ["getBook", "getBooks"],
-            changeMethods: ["AppreciateOneNear", "setBook", "deleteBook", "resetBooks"],
+            viewMethods: ["getBook", "getBooks", "getBookVotes"],
+            changeMethods: ["AppreciateOneNear", "setBook", "deleteBook", "resetBooks", "voteBook"],
         }
     );
 }

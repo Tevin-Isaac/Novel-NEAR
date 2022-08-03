@@ -9,6 +9,7 @@ export function createBook(book) {
 }
 
 export function getBooks() {
+    
     return window.contract.getBooks();
 }
 
@@ -19,3 +20,11 @@ export async function AppreciateOneNear(id) {
 export async function deleteBook(id, owner) {
     return window.contract.deleteBook({id, owner});
 }
+export async function voteBook({id, voteType}){
+    const isSuccess = await window.contract.voteBook({bookId: id, voteType: voteType}, GAS);
+    if (isSuccess){
+       return Promise.resolve(isSuccess);
+    } else{
+      return Promise.reject();
+    }
+ }
