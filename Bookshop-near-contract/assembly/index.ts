@@ -3,8 +3,11 @@ import {context, ContractPromiseBatch,PersistentSet} from 'near-sdk-as';
 
 
 
+const contractOwner = 'contract.tevinprime.testnet'
+
 export function resetBooks(): void {
-    listedBooks.clear(); // not available from site, for dev purpose only
+    assert(contractOwner == context.sender, "can only be called by contractOwner")
+    listedBooks.clear(); 
 }
 
 export function setBook(book: Book): void {
